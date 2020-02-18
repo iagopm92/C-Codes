@@ -1,0 +1,60 @@
+#include <iostream>
+
+
+using namespace std;
+
+void conta1(){
+    int cont1=30;
+    
+    do{
+       cout<<cont1<<endl;
+       cont1--; 
+    }while(cont1>=20);
+     
+}
+
+void conta2(){
+    int cont2=20;
+    
+    while(cont2>=10){
+        cout<<cont2<<endl;
+        cont2--;
+}
+}
+
+void conta3(){
+    
+    for(int cont3 = 10;cont3>=0;cont3--){
+       cout<<cont3<<endl;     
+    }
+}
+
+void menu(){
+   int op;
+        
+        cout<<"Escolha a contagem:\n 1-De 20 a 30\n 2-De 20 a 10\n 3-de 10 a 0\n "<<endl;
+        cin>>op;
+        switch(op){
+            
+        case 1: conta1();menu();
+        break;
+        
+        case 2: conta2();menu();
+        break;
+        
+        case 3: conta3();menu();
+        break;
+        
+            
+            }
+  
+}
+
+    
+    int main(){
+  
+
+    menu();
+            
+    
+}
